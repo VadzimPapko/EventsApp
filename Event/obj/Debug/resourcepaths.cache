@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <AdditionalAndroidResourcePaths>
+    <AdditionalAndroidResourcePath>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.Compat/24.2.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.Core.UI/24.2.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.v7.RecyclerView/24.2.1/embedded</AdditionalAndroidResourcePath>
+    <AdditionalAndroidResourcePath>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.v7.CardView/24.2.1/embedded</AdditionalAndroidResourcePath>
+  </AdditionalAndroidResourcePaths>
+  <AdditionalJavaLibraryReferences>
+    <AdditionalJavaLibraryReference>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.Compat/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.Compat/24.2.1/embedded/libs/internal_impl-24.2.1.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.Core.UI/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.Core.UI/24.2.1/embedded/libs/internal_impl-24.2.1.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.v7.RecyclerView/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+    <AdditionalJavaLibraryReference>/Users/home/.local/share/Xamarin/Xamarin.Android.Support.v7.CardView/24.2.1/embedded/classes.jar</AdditionalJavaLibraryReference>
+  </AdditionalJavaLibraryReferences>
+  <AdditionalNativeLibraryReferences />
+</Paths>

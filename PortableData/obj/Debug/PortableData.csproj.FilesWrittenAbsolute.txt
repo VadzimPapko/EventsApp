@@ -1,0 +1,7 @@
+/Users/home/Projects/Events/PortableData/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/home/Projects/Events/PortableData/obj/Debug/PortableData.Data.data.json
+/Users/home/Projects/Events/PortableData/bin/Debug/PortableData.dll.mdb
+/Users/home/Projects/Events/PortableData/bin/Debug/PortableData.dll
+/Users/home/Projects/Events/PortableData/obj/Debug/PortableData.dll
+/Users/home/Projects/Events/PortableData/obj/Debug/PortableData.dll.mdb
+/Users/home/Projects/Events/PortableData/bin/Debug/Newtonsoft.Json.dll
