@@ -1,43 +1,36 @@
-﻿
-using System.Linq;
+﻿using System.Linq;
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Views;
-using Android.Widget;
 using Android.Support.V7.Widget;
-using PortableData;
+using Android.Widget;
 
 namespace Event
 {
+	/// <summary>
+	/// Zone activities activity.
+	/// </summary>
 	[Activity(Label = "Activities")]
-	public class ZoneActivitiesActivity : Activity
+	public class ZoneActivitiesActivity : Activity, IZoneActivityView
 	{
-		const string ZONE_NUM = "zoneNum";
-
-		IEventDataProvider _provider;
-
-		IModel _model;
-
 		RecyclerView _recyclerView;
 
 		RecyclerView.LayoutManager _layoutManager;
 
+		ZoneActivitiesPresenter _presenter;
+
 		ZoneActivitiesAdapter _zoneActivitiesAdapter;
 
-		protected override async void OnCreate(Bundle savedInstanceState)
+		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
 
-			var zoneNum = Intent.GetIntExtra(ZONE_NUM, 0);
+			var zoneNum = Intent.GetIntExtra(Resource.String.zone_num.ToString(), 0);
 
 			SetContentView(Resource.Layout.ZoneActivities);
 
-			//Get EventDataProvider from Unity Container
-			_provider = App.Container.Resolve(typeof(EventDataProvider), "eventDataProvider") as IEventDataProvider;
-
-			//Initialization model
-			_model = new Model(_provider);
+			//Initialization presenter
+			_presenter = new ZoneActivitiesPresenter(this);
 
 			//Get ResyclerView layout:
 			_recyclerView = FindViewById<RecyclerView>(Resource.Id.activitiesRecyclerView);
@@ -47,58 +40,33 @@ namespace Event
 
 			_recyclerView.SetLayoutManager(_layoutManager);
 
-			var activityCollection = await _model.GetActivitiesByZone(zoneNum);
+			_presenter.OnCreate(savedInstanceState, zoneNum);
+		}
 
-			_zoneActivitiesAdapter = new ZoneActivitiesAdapter(activityCollection);
+		/// <summary>
+		/// Shows the zone activity collection.
+		/// </summary>
+		/// <param name="collection">Collection.</param>
+		public void ShowZoneActivityCollection(IQueryable<ZoneActivityDto> collection)
+		{
+			_zoneActivitiesAdapter = new ZoneActivitiesAdapter(collection);
 
 			_recyclerView.SetAdapter(_zoneActivitiesAdapter);
 		}
-	}
 
-	public class ZoneActivitiesViewHolder : RecyclerView.ViewHolder 
-	{
-		public TextView Name { get; private set; }
-		public TextView StartTime { get; private set;}
-
-		public ZoneActivitiesViewHolder(View itemView):base(itemView)
+		/// <summary>
+		/// Shows the empty collection.
+		/// </summary>
+		public void ShowEmptyCollection()
 		{
-			Name = itemView.FindViewById<TextView>(Resource.Id.txt_activity_name);
-			StartTime = itemView.FindViewById<TextView>(Resource.Id.txt_activity_start_time);
-		}
-	}
-
-	public class ZoneActivitiesAdapter : RecyclerView.Adapter
-	{
-		IQueryable<ZoneActivityDto> _zoneActivityDtos;
-
-		public ZoneActivitiesAdapter(IQueryable<ZoneActivityDto> zoneActivityDtos)
-		{
-			_zoneActivityDtos = zoneActivityDtos;
+			Toast.MakeText(this, Resource.String.emty_zone_activities_list, ToastLength.Short).Show();
 		}
 
-		public override int ItemCount
+		protected override void OnSaveInstanceState(Bundle outState)
 		{
-			get
-			{
-				return _zoneActivityDtos.Count();
-			}
-		}
+			base.OnSaveInstanceState(outState);
 
-		public override void OnBindViewHolder(RecyclerView.ViewHolder holder, int position)
-		{
-			ZoneActivitiesViewHolder zoneActivitiesViewHolder = holder as ZoneActivitiesViewHolder;
-
-			zoneActivitiesViewHolder.Name.Text = _zoneActivityDtos.ToArray()[position].Name;
-			zoneActivitiesViewHolder.StartTime.Text = _zoneActivityDtos.ToArray()[position].StartTime;
-		}
-
-		public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
-		{
-			View itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.CardZoneActivities, parent, false);
-
-			ZoneActivitiesViewHolder zoneActivitiesViewHolder = new ZoneActivitiesViewHolder(itemView);
-
-			return zoneActivitiesViewHolder;
+			_presenter.OnSaveInstanceState(outState);
 		}
 	}
 }

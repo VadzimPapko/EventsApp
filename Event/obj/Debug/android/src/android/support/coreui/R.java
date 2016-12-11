@@ -189,7 +189,10 @@ containing a value of this type.
     }
     public static final class string {
         public static int app_name=0x7f090001;
+        public static int emty_zone_activities_list=0x7f090003;
+        public static int emty_zones_list=0x7f090002;
         public static int hello=0x7f090000;
+        public static int zone_num=0x7f090004;
     }
     public static final class style {
         public static int Base_CardView=0x7f050001;

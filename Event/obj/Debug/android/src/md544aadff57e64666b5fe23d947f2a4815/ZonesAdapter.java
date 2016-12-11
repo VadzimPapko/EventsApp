@@ -1,7 +1,7 @@
 package md544aadff57e64666b5fe23d947f2a4815;
 
 
-public class EventAdapter
+public class ZonesAdapter
 	extends android.support.v7.widget.RecyclerView.Adapter
 	implements
 		mono.android.IGCUserPeer
@@ -14,15 +14,15 @@ public class EventAdapter
 			"n_onBindViewHolder:(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V:GetOnBindViewHolder_Landroid_support_v7_widget_RecyclerView_ViewHolder_IHandler\n" +
 			"n_onCreateViewHolder:(Landroid/view/ViewGroup;I)Landroid/support/v7/widget/RecyclerView$ViewHolder;:GetOnCreateViewHolder_Landroid_view_ViewGroup_IHandler\n" +
 			"";
-		mono.android.Runtime.register ("Event.EventAdapter, Event, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", EventAdapter.class, __md_methods);
+		mono.android.Runtime.register ("Event.ZonesAdapter, Event, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", ZonesAdapter.class, __md_methods);
 	}
 
 
-	public EventAdapter () throws java.lang.Throwable
+	public ZonesAdapter () throws java.lang.Throwable
 	{
 		super ();
-		if (getClass () == EventAdapter.class)
-			mono.android.TypeManager.Activate ("Event.EventAdapter, Event, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == ZonesAdapter.class)
+			mono.android.TypeManager.Activate ("Event.ZonesAdapter, Event, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

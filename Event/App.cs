@@ -24,6 +24,8 @@ namespace Event
 			Container.RegisterType<IEventDataProvider, EventDataProvider>();
 
 			base.OnCreate();
+
+			context = Application.Context;
 		}
 
 		//get current application context

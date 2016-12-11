@@ -1,27 +1,24 @@
 ﻿<Properties StartupConfiguration="{846C8FC3-E3D1-46DC-A353-D4DCFCFE5C32}|Default">
-  <MonoDevelop.Ide.ItemProperties.Event AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.vap1_API23" AndroidDesignerPreferredTheme="Theme.Holo.Light.DarkActionBar" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Event/MainActivity.cs">
+  <MonoDevelop.Ide.ItemProperties.Event AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.3100d948d261c2dd" AndroidDesignerPreferredTheme="Theme.Holo.Light.DarkActionBar" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Event/App.cs">
     <Files>
-      <File FileName="Event/MainActivity.cs" Line="98" Column="1" />
-      <File FileName="Event/ZoneActivitiesActivity.cs" Line="29" Column="4" />
-      <File FileName="Event/Models/DTOs/ZoneDto.cs" Line="4" Column="79" />
-      <File FileName="PortableData/Models/ZoneActivity.cs" Line="17" Column="2" />
-      <File FileName="PortableData/Models/Zone.cs" Line="15" Column="1" />
-      <File FileName="PortableData/Models/Event.cs" Line="10" Column="4" />
-      <File FileName="PortableData/Providers/EventDataProvider.cs" Line="81" Column="1" />
-      <File FileName="PortableData/Interfaces/IEventDataProvider.cs" Line="11" Column="44" />
-      <File FileName="Event/Models/Interfaces/IModel.cs" Line="3" Column="1" />
-      <File FileName="Event/Models/Model.cs" Line="40" Column="1" />
-      <File FileName="Event/Models/DTOs/ZoneActivityDto.cs" Line="12" Column="1" />
+      <File FileName="Event/ZoneActivity.cs" Line="11" Column="6" />
+      <File FileName="Event/ZoneActivitiesActivity.cs" Line="26" Column="38" />
+      <File FileName="Event/Presenters/ZonesPresenter.cs" Line="8" Column="2" />
+      <File FileName="Event/SplashActivity.cs" Line="7" Column="2" />
+      <File FileName="Event/Resources/values/Strings.xml" Line="9" Column="1" />
+      <File FileName="Event/Views/Interfaces/IZoneActivityView.cs" Line="1" Column="1" />
+      <File FileName="Event/Presenters/ZoneActivitiesPresenter.cs" Line="28" Column="4" />
+      <File FileName="Event/App.cs" Line="18" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/home/Projects/Events/Event/Models/Model.cs" relfile="Event/Models/Model.cs" line="16" column="1" />
-      <Breakpoint file="/Users/home/Projects/Events/PortableData/Providers/EventDataProvider.cs" relfile="PortableData/Providers/EventDataProvider.cs" line="63" column="29" />
-      <Breakpoint file="/Users/home/Projects/Events/Event/Models/Model.cs" relfile="Event/Models/Model.cs" line="35" column="1" />
-      <Breakpoint file="/Users/home/Projects/Events/Event/ZoneActivitiesActivity.cs" relfile="Event/ZoneActivitiesActivity.cs" line="30" column="1" />
+      <Breakpoint file="/Users/home/Projects/Epam/event/Event/Presentors/ZonesPresenter.cs" relfile="Event/Presentors/ZonesPresenter.cs" line="32" column="25" />
+      <Breakpoint file="/Users/home/Projects/Epam/event/Event/Presentors/ZonesPresenter.cs" relfile="Event/Presentors/ZonesPresenter.cs" line="61" column="1" />
+      <Breakpoint file="/Users/home/Projects/Epam/event/Event/MainActivity.cs" relfile="Event/MainActivity.cs" line="87" column="1" />
+      <Breakpoint file="/Users/home/Projects/Epam/event/Event/MainActivity.cs" relfile="Event/MainActivity.cs" line="80" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

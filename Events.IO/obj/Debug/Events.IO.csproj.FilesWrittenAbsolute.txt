@@ -1,8 +1,0 @@
-/Users/home/Projects/Events/Events.IO/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/home/Projects/Events/Events.IO/bin/Debug/Events.IO.dll.mdb
-/Users/home/Projects/Events/Events.IO/bin/Debug/Events.IO.dll
-/Users/home/Projects/Events/Events.IO/obj/Debug/Events.IO.dll
-/Users/home/Projects/Events/Events.IO/obj/Debug/Events.IO.dll.mdb
-/Users/home/Projects/Events/Events.IO/bin/Debug/PortableData.dll
-/Users/home/Projects/Events/Events.IO/bin/Debug/PortableData.dll.mdb
-/Users/home/Projects/Events/Events.IO/bin/Debug/Newtonsoft.Json.dll

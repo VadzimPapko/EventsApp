@@ -254,8 +254,17 @@ namespace Event
 			// aapt resource value: 0x7f090001
 			public const int app_name = 2131296257;
 			
+			// aapt resource value: 0x7f090003
+			public const int emty_zone_activities_list = 2131296259;
+			
+			// aapt resource value: 0x7f090002
+			public const int emty_zones_list = 2131296258;
+			
 			// aapt resource value: 0x7f090000
 			public const int hello = 2131296256;
+			
+			// aapt resource value: 0x7f090004
+			public const int zone_num = 2131296260;
 			
 			static String()
 			{

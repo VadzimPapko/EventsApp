@@ -1,1 +1,1 @@
-<resources><string name="hello">Hello World, Click Me!</string><string name="app_name">Event</string></resources>
+<resources><string name="hello">Hello World, Click Me!</string><string name="app_name">Event</string><string name="emty_zones_list">Zones list is empty!</string><string name="emty_zone_activities_list">Zone activities list is empty!</string><string name="zone_num">zoneNum</string></resources>
